@@ -24,6 +24,10 @@ if (MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP ${disable_msvc_warnings}")
 endif()
 
+if (UNIX)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+endif()
+
 #set(LIBRARY_TYPE_pvt_cppan_demo_boost_thread_1_60_0 SHARED)
 #set(LIBRARY_TYPE_pvt_cppan_demo_boost_log_1_60_0 SHARED)
 
@@ -31,3 +35,6 @@ add_subdirectory(dep/cppan)
 
 add_executable(main src/main.cpp)
 target_link_libraries(main cppan)
+if (UNIX)
+    target_link_libraries(main pthread)
+endif()
