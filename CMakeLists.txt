@@ -2,7 +2,7 @@
 # demo_project
 #
 
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.0.0)
 
 # Use solution folders.
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
@@ -25,7 +25,7 @@ if (MSVC)
 endif()
 
 if (UNIX)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 endif()
 
 #set(LIBRARY_TYPE_pvt_cppan_demo_boost_thread_1_60_0 SHARED)

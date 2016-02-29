@@ -1,6 +1,6 @@
 #include <string>
 
-#include <gsl.h>
+//#include <gsl.h>
 #include <yaml-cpp/yaml.h>
 #include <zlib.h>
 
@@ -12,7 +12,7 @@
 int main()
 {
     std::string s = "test string";
-    gsl::span<std::string> sp(s);
+    //gsl::span<std::string> sp(s);
     YAML::Node n;
     zError(0);
     boost::asio::io_service io_service;

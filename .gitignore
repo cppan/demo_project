@@ -2,3 +2,4 @@
 /win*
 /build*
 *~
+*.user
