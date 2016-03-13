@@ -1,0 +1,7 @@
+dependencies:
+    #pvt.cppan.demo.gsl: master
+    pvt.cppan.demo.yaml_cpp: "*"
+
+    pvt.cppan.demo.boost.asio: "*"
+    pvt.cppan.demo.boost.filesystem: "*"
+    pvt.cppan.demo.boost.log: "*"
