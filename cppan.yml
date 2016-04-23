@@ -1,7 +1,7 @@
 dependencies:
-    #pvt.cppan.demo.gsl: master
-    pvt.cppan.demo.yaml_cpp: "*"
+    #pvt.cppan.demo.gsl: master # means master branch (channel)
+    pvt.cppan.demo.yaml_cpp: "*" # means any stable version
 
-    pvt.cppan.demo.boost.asio: 1
-    pvt.cppan.demo.boost.filesystem: 1.60
+    pvt.cppan.demo.boost.asio: 1 # means the latest 1.*.* version
+    pvt.cppan.demo.boost.filesystem: 1.60 # means the latest 1.60.* version
     pvt.cppan.demo.boost.log: "*"
